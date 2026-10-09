@@ -1,0 +1,28 @@
+//базовый уровень 
+#include <iostream>
+#include <clocale>
+int main() {
+	setlocale(LC_ALL, ".UTF8");
+	double first_ch;
+	double second_ch;
+	double sred;
+	std::cout << "Среднее двух чисел\n\n\n";
+	std::cout << "Введите первое число\n";
+	std::cin >> first_ch;
+	if (std::cin.fail()) {
+		std::cout << "вы ввели не число!\n";
+		return 1;
+	}
+	std::cout << "Введите второе число\n";
+	std::cin >> second_ch;
+	if (std::cin.fail()) {
+		std::cout << "вы ввели не число!\n";
+		return 1;
+	}
+	sred = (first_ch + second_ch) / 2;
+	std::cout << "Среднее = ";
+	std::cout << sred;
+
+
+	return 0;
+}
