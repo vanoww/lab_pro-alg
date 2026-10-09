@@ -1,0 +1,17 @@
+// средний уровень
+#include <iostream>
+#include <clocale>
+
+int main() {
+	setlocale(LC_ALL, ".UTF8");
+	int dlinna;
+	std::cin >> dlinna;
+	if (std::cin.fail()) {
+		std::cout << "Вы ввели не число!";
+		return 1;
+	}
+	std::cout << "V = " << dlinna * dlinna * dlinna << std::endl << "Spov = " << dlinna * dlinna * 6;
+
+
+	return 0;
+}
