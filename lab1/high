@@ -1,0 +1,29 @@
+// повышенный уровень
+#include <iostream>
+#include <clocale>
+
+int main() {
+	setlocale(LC_ALL, ".UTF8");
+	int ch;
+	int min_vvod;
+	int min_vivod;
+	int sec;
+	std::cout << "введите количество часов\n";
+	std::cin >> ch;
+	if (std::cin.fail()) {
+		std::cout << "вы ввели не число";
+		return 1;
+	}
+	std::cout << "введите количество минут\n";
+	std::cin >> min_vvod;
+	if (std::cin.fail()) {
+		std::cout << "вы ввели не число";
+		return 1;
+	}
+	min_vivod = ch * 60 + min_vvod;
+	sec = ch * 3600 + min_vvod * 60;
+	std::cout << "в минутах - " << min_vivod << std::endl << "в секундах - " << sec;
+
+
+	return 0;
+}
