@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include <iomanip>
 #include <clocale>
 #include <cmath> // для тригонометрии
 using namespace std;
